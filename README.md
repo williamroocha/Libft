@@ -20,7 +20,7 @@
 
 ## 🗣️ About
 
-> _The aim of this project is to code a C library regrouping usual functions that will be allowed to use in all my other projects._
+> _The aim of this project is to code a C library regrouping usual functions that will be allowed to use in all of my other projects._
 
 
 	🚀 TLDR: this project consists of coding basic C functions (see below), which are then compiled
