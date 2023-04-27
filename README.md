@@ -2,9 +2,9 @@
 	Libft 
 </h1>
 
-<p align="center">
+<h2 align="center">
 	My Fisrt Project of 42 Lisboa
-</p>
+</h2>
 
 <h3 align="center">
 	<a href="#%EF%B8%8F-about">About</a>
