@@ -1,86 +1,95 @@
-# Libft (My Fisrt Project of 42 Lisboa)
+<h1 align="center">
+	Libft (My Fisrt Project of 42 Lisboa)
+</h1>
 
-![Project Image](project-image-url)
+<p align="center">
+	<b><i>Development repo for 42cursus' libft project</i></b><br>
+	For further information about 42cursus and its projects, please refer to <a href="https://github.com/appinha/42cursus"><b>42cursus repo</b></a>.
+</p>
 
-> This is a ReadMe template to help save you time and effort.
+<p align="center">
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/appinha/42cursus-00-Libft?color=blueviolet" />
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/appinha/42cursus-00-Libft?color=blueviolet" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/appinha/42cursus-00-Libft?color=blue" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/appinha/42cursus-00-Libft?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/appinha/42cursus-00-Libft?color=brightgreen" />
+</p>
 
----
-
-### Table of Contents
-You're sections headers will be used to reference location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
-
----
-
-## Description
-
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
-
-#### Technologies
-
-- Technology 1
-- Technology 2
-
-[Back To The Top](#read-me-template)
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#-index">Index</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-usage">Usage</a>
+	<span> · </span>
+	<a href="#-testing">Testing</a>
+</h3>
 
 ---
 
-## How To Use
+## 🗣️ About
 
-#### Installation
+> _The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects._
 
+For detailed information, refer to the [**subject of this project**](https://github.com/appinha/42cursus/tree/master/_PDFs).
 
+	🚀 TLDR: this project consists of coding basic C functions (see below), which are then compiled
+	into a library for use in other projects of the cursus.
 
-#### API Reference
+# Libft Functions
 
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#read-me-template)
+### Functions from `<ctype.h>`
 
----
+- [`ft_isalpha`](ft_isalpha.c)	- checks  for  an  alphabetic  character.
+- [`ft_isdigit`](ft_isdigit.c)	- checks for a digit (0 through 9).
+- [`ft_isalnum`](ft_isalnum.c)	- checks for an alphanumeric character.
+- [`ft_isascii`](ft_isascii.c)	- checks whether c fits into the ASCII character set.
+- [`ft_isprint`](ft_isprint.c)	- checks for any printable character.
+- [`ft_toupper`](ft_toupper.c)	- convert char to uppercase.
+- [`ft_tolower`](ft_tolower.c)	- convert char to lowercase.
 
-## References
-[Back To The Top](#read-me-template)
+### Functions from `<string.h>`
 
----
+- [`ft_memset`](ft_memset.c)	- fill memory with a constant byte.
+- [`ft_strlen`](ft_strlen.c)	- calculate the length of a string.
+- [`ft_bzero`](ft_bzero.c)	- zero a byte string.
+- [`ft_memcpy`](ft_memcpy.c)	- copy memory area.
+- [`ft_memmove`](ft_memmove.c)	- copy memory area.
+- [`ft_strlcpy`](ft_strlcpy.c)	- copy string to an specific size.
+- [`ft_strlcat`](ft_strlcat.c)	- concatenate string to an specific size.
+- [`ft_strchr`](ft_strchr.c)	- locate character in string.
+- [`ft_strrchr`](ft_strrchr.c)	- locate character in string.
+- [`ft_strncmp`](ft_strncmp.c)	- compare two strings.
+- [`ft_memchr`](ft_memchr.c)	- scan memory for a character.
+- [`ft_memcmp`](ft_memcmp.c)	- compare memory areas.
+- [`ft_strnstr`](ft_strnstr.c)	- locate a substring in a string.
+- [`ft_strdup`](ft_strdup.c)	- creates a dupplicate for the string passed as parameter.
 
-## License
+### Functions from `<stdlib.h>`
+- [`ft_atoi`](ft_atoi.c)	- convert a string to an integer.
+- [`ft_calloc`](ft_calloc.c)	- allocates memory and sets its bytes' values to 0.
 
-MIT License
+### Non-standard functions
+- [`ft_substr`](ft_substr.c)	- returns a substring from a string.
+- [`ft_strjoin`](ft_strjoin.c)	- concatenates two strings.
+- [`ft_strtrim`](ft_strtrim.c)	- trims the beginning and end of string with specific set of chars.
+- [`ft_split`](ft_split.c)	- splits a string using a char as parameter.
+- [`ft_itoa`](ft_itoa.c)	- converts a number into a string.
+- [`ft_strmapi`](ft_strmapi.c)	- applies a function to each character of a string.
+- [`ft_striteri`](ft_striteri.c)	- applies a function to each character of a string.
+- [`ft_putchar_fd`](ft_putchar_fd.c)	- output a char to a file descriptor.
+- [`ft_putstr_fd`](ft_putstr_fd.c)	- output a string to a file descriptor.
+- [`ft_putendl_fd`](ft_putendl_fd.c)	- output a string to a file descriptor, followed by a new line.
+- [`ft_putnbr_fd`](ft_putnbr_fd.c)	- output a number to a file descriptor.
 
-Copyright (c) [2017] [James Q Quick]
+### Linked list functions
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- [`ft_lstnew`](ft_lstnew.c)	- creates a new list element.
+- [`ft_lstadd_front`](ft_lstadd_front.c)	- adds an element at the beginning of a list.
+- [`ft_lstsize`](ft_lstsize.c)	- counts the number of elements in a list.
+- [`ft_lstlast`](ft_lstlast.c)	- returns the last element of the list.
+- [`ft_lstadd_back`](ft_lstadd_back.c)	- adds an element at the end of a list.
+- [`ft_lstclear`](ft_lstclear.c)	- deletes and free list.
+- [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list.
+- [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-[Back To The Top](#read-me-template)
-
----
-
-## Author Info
-
-- Twitter - [@jamesqquick](https://twitter.com/jamesqquick)
-- Website - [James Q Quick](https://jamesqquick.com)
-
-[Back To The Top](#read-me-template)
