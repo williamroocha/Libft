@@ -6,24 +6,15 @@
 	My Fisrt Project of 42 Lisboa
 </h2>
 
-<h3 align="center">
-	<a href="#%EF%B8%8F-about">About</a>
-	<span> · </span>
-	<a href="#-index">Index</a>
-	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
-</h3>
 
 ---
 
-## 🗣️ About
+## About
 
 > _The aim of this project is to code a C library regrouping usual functions that will be allowed to use in all of my other projects._
 
 
-	🚀 TLDR: this project consists of coding basic C functions (see below), which are then compiled
+	TLDR: this project consists of coding basic C functions (see below), which are then compiled
 	into a library for use in other projects of the cursus.
 
 # Libft Functions
