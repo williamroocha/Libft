@@ -42,7 +42,7 @@ The project consists of the following functions:
 
 ### Functions from `<stdlib.h>`
 - [`ft_atoi`](ft_atoi.c)					- convert a string to an integer.
-- [ft_atoll](ft_atoll.c)					- convert a string to a long long integer.
+- [`ft_atoll`](ft_atoll.c)					- convert a string to a long long integer.
 - [`ft_calloc`](ft_calloc.c)				- allocates memory and sets its bytes' values to 0.
 
 ### Non-standard functions
