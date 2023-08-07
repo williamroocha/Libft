@@ -74,4 +74,8 @@ The project consists of the following functions:
 To use the library, clone the repository and compile the files with your program:
 ```bash
 git clone git@github.com:williamroocha/Libft.git
-``````
+```
+Then, include the header file in your program:
+```c
+#include "path_to_libft/include/libft.h"
+```
