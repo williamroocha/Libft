@@ -12,6 +12,7 @@ This project is my first attempt at recreating the C standard library. It is a c
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [Usage](#usage)
+- [Examples](#examples)
 
 ## Description
 The project consists of the following functions:
@@ -78,4 +79,54 @@ git clone git@github.com:williamroocha/Libft.git
 Then, include the header file in your program:
 ```c
 #include "path_to_libft/include/libft.h"
+```
+Finally, compile your program with the library:
+```bash
+cc -I path_to_libft/include -L path_to_libft -lft your_program.c
+```
+
+## Examples
+
+### Example 1: Using String Manipulation Functions
+```c
+#include "path_to_libft/include/libft.h"
+
+int	main(void)
+{
+	char source[] = "Hello, ";
+	char destination[20];
+
+	ft_strcpy(destination, source);
+	ft_strcat(destination, "world!");
+	ft_putstr(destination);
+	return (0);
+}
+```
+
+### Example 2: Using Linked List Functions
+```c
+#include "path_to_libft/include/libft.h"
+
+void	print_element(void *content)
+{
+	ft_putstr((char *)content);
+	ft_putchar('\n');
+}
+
+void	free_element(void *content)
+{
+	free(content);
+}
+
+int	main(void)
+{
+	t_list	*list;
+
+	list = NULL;
+	ft_lstadd_back(&list, ft_lstnew("Hello"));
+	ft_lstadd_back(&list, ft_lstnew("world!"));
+	ft_lstiter(list, &print_element);
+	ft_lstclear(&list, &free_element);
+	return (0);
+}
 ```
