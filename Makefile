@@ -1,5 +1,7 @@
+# Directoies 
 SOURCE_DIR = src
 
+# Files
 SOURCEFILES = $(addprefix $(SOURCE_DIR)/, \
     ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
     ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c	\
@@ -12,7 +14,6 @@ SOURCEFILES = $(addprefix $(SOURCE_DIR)/, \
     ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
     ft_atoll.c \
 )
-
 OBJECTS = $(patsubst $(SOURCE_DIR)/%.c,obj/%.o,$(SOURCEFILES))
 
 SRC_BONUS_DIR = src_bonus
@@ -22,16 +23,21 @@ SRC_BONUS = $(addprefix $(SRC_BONUS_DIR)/, \
 )
 OBJ_BONUS = $(patsubst $(SRC_BONUS_DIR)/%.c,obj/%.o,$(SRC_BONUS))
 
+# Name of the executable
 NAME = libft.a
 
+# Compiler and flags
 COMPILER = cc
-
-AR = ar
-RM = rm -f
 FLAGS = -Wall -Wextra -Werror
 
+# Commands
+AR = ar
+RM = rm -f
+
+# Phony targets
 .PHONY: all bonus clean fclean re
 
+# Rules
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
