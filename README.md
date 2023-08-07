@@ -11,6 +11,7 @@ This project is my first attempt at recreating the C standard library. It is a c
 - [Introduction](#introduction)
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
+- [Usage](#usage)
 
 ## Description
 The project consists of the following functions:
@@ -68,3 +69,9 @@ The project consists of the following functions:
 - [`ft_lstclear`](ft_lstclear.c)			- deletes and free list.
 - [`ft_lstiter`](ft_lstiter.c)				- applies a function to each element of a list.
 - [`ft_lstmap`](ft_lstmap.c)				- applies a function to each element of a list.
+
+## Usage
+To use the library, clone the repository and compile the files with your program:
+```bash
+git clone git@github.com:williamroocha/Libft.git
+``````
