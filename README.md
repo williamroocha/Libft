@@ -14,6 +14,7 @@ This project is my first attempt at recreating the C standard library. It is a c
 - [Usage](#usage)
 - [Examples](#examples)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 The project consists of the following functions:
@@ -136,4 +137,4 @@ int	main(void)
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is licensed under [MIT](https://choosealicense.com/licenses/mit/).
+This project is licensed under the terms of the [MIT license](https://opensource.org/license/mit/)
