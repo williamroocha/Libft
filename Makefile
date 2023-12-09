@@ -45,8 +45,6 @@ $(NAME): $(OBJECTS)
 	@if [ ! -e $(NAME) ] || [ "$(OBJECTS)" -nt "$(NAME)" ]; then \
 		$(AR) rcs $(NAME) $(OBJECTS); \
 		echo "libft compiled"; \
-	else \
-		echo "libft is up to date"; \
 	fi
 
 
@@ -69,7 +67,6 @@ obj:
 
 clean:
 	@$(RM) $(OBJECTS) $(OBJ_BONUS) obj
-	@echo "libft object files and obj directory removed"
 
 fclean: clean
 	@$(RM) $(NAME)
