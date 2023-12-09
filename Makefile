@@ -18,7 +18,7 @@ FLAGS = -Wall -Wextra -Werror
 
 # Commands
 AR = ar
-RM = rm -f
+RM = rm -rf 
 
 # Phony targets
 .PHONY: all bonus clean fclean re
@@ -27,25 +27,33 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@$(AR) rcs $(NAME) $(OBJECTS)
-	@echo "libft compiled"
+	@if [ ! -e $(NAME) ] || [ "$(OBJECTS)" -nt "$(NAME)" ]; then \
+		$(AR) rcs $(NAME) $(OBJECTS); \
+		echo "libft compiled"; \
+	else \
+		echo "libft is up to date"; \
+	fi
 
 bonus: $(OBJ_BONUS)
-	
+	@if [ ! -e $(NAME) ] || [ "$(OBJ_BONUS)" -nt "$(NAME)" ]; then \
+		$(AR) rcs $(NAME) $(OBJ_BONUS); \
+		echo "bonus files added to libft"; \
+	else \
+		echo "bonus files are up to date"; \
+	fi
 
 obj/%.o: $(SOURCE_DIR)/%.c | obj
 	@$(COMPILER) $(FLAGS) -c $< -o $@
 
 obj/%.o: $(SRC_BONUS_DIR)/%.c | obj
 	@$(COMPILER) $(FLAGS) -c $< -o $@
-	@$(AR) rcs $(NAME) $(OBJ_BONUS)
 
 obj:
 	@mkdir -p obj
 
 clean:
-	@$(RM) $(OBJECTS) $(OBJ_BONUS)
-	@echo "libft object files removed"
+	@$(RM) $(OBJECTS) $(OBJ_BONUS) obj
+	@echo "libft object files and obj directory removed"
 
 fclean: clean
 	@$(RM) $(NAME)
